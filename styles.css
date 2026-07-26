@@ -1473,6 +1473,19 @@ img {
   align-items: center;
 }
 
+.project-actions .project-download-link {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--ink);
+}
+
+.project-actions .project-download-link:hover {
+  background: var(--accent-strong);
+  opacity: 1;
+}
+
 .app-development-page {
   overflow-x: hidden;
 }
@@ -1733,6 +1746,18 @@ img {
   background: var(--ink);
   color: var(--cream);
   opacity: 1;
+}
+
+.app-case-links .app-download-link {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.app-case-links .app-download-link:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--ink);
 }
 
 .app-case-cards {
