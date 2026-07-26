@@ -450,6 +450,14 @@ img {
   font-size: 0.82rem;
 }
 
+.testimonial-card figcaption .client-flag {
+  margin-right: 0.2rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  text-transform: none;
+}
+
 .testimonial-card figcaption span {
   color: var(--ink-soft);
   font-family: var(--font-geist-mono), monospace;
@@ -464,20 +472,12 @@ img {
 
 .reviews-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 2rem;
   align-items: center;
   margin-top: 1.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--line);
-}
-
-.reviews-footer p,
-.source-note {
-  margin: 0;
-  color: var(--ink-soft);
-  font-size: 0.72rem;
-  line-height: 1.55;
 }
 
 .reviews-footer .reviews-link {
