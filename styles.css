@@ -480,14 +480,18 @@ img {
   line-height: 1.55;
 }
 
-.reviews-footer .project-link {
+.reviews-footer .reviews-link {
   margin-top: 0;
-  border-bottom-color: currentColor;
-  color: var(--ink);
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--cream);
 }
 
-.reviews-footer .project-link:hover {
-  color: #4c6200;
+.reviews-footer .reviews-link:hover {
+  background: #30423c;
+  color: var(--cream);
   opacity: 1;
 }
 
