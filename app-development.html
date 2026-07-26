@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Android App Development &mdash; Ahsan Rehmat</title>
+    <meta
+      name="description"
+      content="Ahsan Rehmat builds focused Android prototypes with Kotlin, Jetpack Compose, Firebase, clear product decisions, and verified handoff."
+    />
+    <meta name="theme-color" content="#101713" />
+    <link
+      rel="canonical"
+      href="https://ahsanrehmat1.github.io/app-development.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Android App Development &mdash; Ahsan Rehmat"
+    />
+    <meta
+      property="og:description"
+      content="Focused Android prototypes backed by a real Kotlin, Compose, Firebase, and CI case study."
+    />
+    <meta
+      property="og:image"
+      content="https://ahsanrehmat1.github.io/app-development-og.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="./styles.css?v=20260727-1" />
+  </head>
+  <body class="inner-page app-development-page">
+    <main>
+      <header class="site-header">
+        <a
+          class="brand"
+          href="./index.html"
+          aria-label="Ahsan Rehmat, portfolio home"
+        >
+          <span class="brand-mark">AR</span>
+          <span class="brand-copy">
+            <strong>Ahsan Rehmat</strong>
+            <small>Video + Digital</small>
+          </span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <a href="./index.html">Home</a>
+          <a href="#pulseplan">PulsePlan</a>
+          <a href="#offer">What I build</a>
+          <a href="#process">Process</a>
+        </nav>
+
+        <a class="header-cta" href="#contact">
+          Discuss an app <span aria-hidden="true">&nearr;</span>
+        </a>
+      </header>
+
+      <section class="app-dev-hero section-shell" id="top">
+        <div class="app-dev-copy">
+          <div class="availability availability-dark">
+            <span class="availability-dot" aria-hidden="true"></span>
+            Android development
+          </div>
+          <p class="app-dev-kicker">Kotlin &middot; Jetpack Compose &middot; Firebase</p>
+          <h1>
+            I turn clear product ideas into
+            <span>working Android prototypes.</span>
+          </h1>
+          <p class="app-dev-intro">
+            I build focused Android experiences around the main user journey,
+            then verify the important parts: interface behavior, local data,
+            cloud flows, privacy controls, and handoff.
+          </p>
+          <div class="app-dev-actions">
+            <a
+              class="button button-accent"
+              href="https://wa.me/923254172193?text=Hi%20Ahsan%2C%20I%27d%20like%20to%20discuss%20an%20Android%20app%20idea."
+              target="_blank"
+              rel="noreferrer"
+            >
+              Discuss your app idea <span aria-hidden="true">&nearr;</span>
+            </a>
+            <a class="app-dev-text-link" href="#pulseplan">
+              See the case study <span aria-hidden="true">&darr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="app-showcase" aria-label="PulsePlan Android app screens">
+          <figure class="app-shot app-shot-main">
+            <img
+              src="./pulseplan-dashboard.png"
+              alt="PulsePlan dashboard showing cloud backup, workout progress, and performance tracking"
+            />
+          </figure>
+          <figure class="app-shot app-shot-secondary">
+            <img
+              src="./pulseplan-active-workout.png"
+              alt="PulsePlan set-by-set active workout screen"
+            />
+          </figure>
+          <div class="app-build-tag">
+            <span>Current proof project</span>
+            <strong>PulsePlan v0.19.0</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-proof-bar section-shell" aria-label="Verified app proof">
+        <div><span>Platform</span><strong>Android 8.0+</strong></div>
+        <div><span>Interface</span><strong>Compose + Material 3</strong></div>
+        <div><span>Cloud</span><strong>Firebase verified</strong></div>
+        <div><span>Build</span><strong>Tests, lint, and CI passing</strong></div>
+      </section>
+
+      <section class="app-case section-shell" id="pulseplan">
+        <div class="app-case-heading">
+          <div>
+            <span class="eyebrow">Flagship case study</span>
+            <h2>PulsePlan</h2>
+          </div>
+          <div class="app-case-summary">
+            <p>
+              I built PulsePlan as a personalized workout planner that turns a
+              person's goals, experience, equipment, schedule, and movement
+              preferences into a clear daily and weekly plan.
+            </p>
+            <div class="app-case-links">
+              <a
+                class="project-link"
+                href="https://github.com/ahsanrehmat1/PulsePlan"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View the GitHub project <span aria-hidden="true">&nearr;</span>
+              </a>
+              <a
+                class="project-link"
+                href="https://github.com/ahsanrehmat1/PulsePlan/actions/workflows/android-ci.yml"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View build verification <span aria-hidden="true">&nearr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-case-cards">
+          <article>
+            <span>01 / Product problem</span>
+            <h3>Make today's workout obvious.</h3>
+            <p>
+              The experience starts with honest onboarding and produces a
+              repeatable plan without burying the user in setup or fitness
+              jargon.
+            </p>
+          </article>
+          <article>
+            <span>02 / Core experience</span>
+            <h3>Guide the workout, not just list it.</h3>
+            <p>
+              Set-by-set tracking, rest controls, movement guides, swaps, and
+              recovery-aware progress keep the app useful during a real
+              session.
+            </p>
+          </article>
+          <article>
+            <span>03 / Account trust</span>
+            <h3>Back up progress and respect user choice.</h3>
+            <p>
+              Firebase authentication, offline-first cloud sync, restoration,
+              privacy information, and provider-aware account deletion are
+              working and verified.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-gallery section-shell" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Current build</span>
+            <h2 id="gallery-title">The real app journey.</h2>
+          </div>
+          <p>
+            These screens come from the current v0.19.0 build, not a design
+            mockup.
+          </p>
+        </div>
+
+        <div class="app-gallery-grid">
+          <figure>
+            <div class="app-gallery-phone">
+              <img src="./pulseplan-auth.png" alt="PulsePlan sign-in screen with Google and email options" />
+            </div>
+            <figcaption><strong>Account access</strong><span>Google and email sign-in</span></figcaption>
+          </figure>
+          <figure>
+            <div class="app-gallery-phone">
+              <img src="./pulseplan-onboarding.png" alt="PulsePlan personalized onboarding questions" />
+            </div>
+            <figcaption><strong>Onboarding</strong><span>Goals, experience, and routine</span></figcaption>
+          </figure>
+          <figure>
+            <div class="app-gallery-phone">
+              <img src="./pulseplan-active-workout.png" alt="PulsePlan set-by-set active workout" />
+            </div>
+            <figcaption><strong>Active workout</strong><span>Set-by-set session guidance</span></figcaption>
+          </figure>
+          <figure>
+            <div class="app-gallery-phone">
+              <img src="./pulseplan-exercise-guide.png" alt="PulsePlan exercise guide with movement instructions" />
+            </div>
+            <figcaption><strong>Exercise guide</strong><span>Clear steps and video discovery</span></figcaption>
+          </figure>
+          <figure>
+            <div class="app-gallery-phone">
+              <img src="./pulseplan-progress.png" alt="PulsePlan progress insights and six-week trend" />
+            </div>
+            <figcaption><strong>Progress insights</strong><span>Honest activity-based trends</span></figcaption>
+          </figure>
+          <figure>
+            <div class="app-gallery-phone">
+              <img src="./pulseplan-performance.png" alt="PulsePlan performance log" />
+            </div>
+            <figcaption><strong>Performance log</strong><span>Reps, time, distance, and bests</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="app-verification section-shell">
+        <div class="app-verification-panel">
+          <div>
+            <span class="eyebrow eyebrow-light">Verified, not assumed</span>
+            <h2>I test the parts clients need to trust.</h2>
+          </div>
+          <ul>
+            <li>Unit tests, Android lint, and APK assembly pass locally and in GitHub Actions.</li>
+            <li>Email/password and Google authentication have been tested.</li>
+            <li>Cloud upload and restoration were verified after clearing local app data.</li>
+            <li>Crashlytics reporting was confirmed from a physical Android device.</li>
+            <li>Account and saved-data deletion was verified end to end.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="app-offer section-shell" id="offer">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">What I can build</span>
+            <h2>A focused first version with a clear handoff.</h2>
+          </div>
+          <p>
+            I am best suited to Android prototypes and early product versions
+            where the main journey matters more than a long feature list.
+          </p>
+        </div>
+
+        <div class="app-offer-grid">
+          <article>
+            <span>01</span>
+            <h3>Android MVP prototype</h3>
+            <p>
+              A focused set of polished screens, navigation, the main user
+              journey, and realistic local or sample data.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Firebase account flows</h3>
+            <p>
+              Authentication, cloud-backed records, restoration, privacy
+              controls, and account deletion when the product needs them.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Product refinement</h3>
+            <p>
+              Clearer onboarding, state handling, accessibility improvements,
+              testing, and documentation for an existing Kotlin app.
+            </p>
+          </article>
+        </div>
+
+        <div class="app-scope-note">
+          <strong>A focused engagement can include</strong>
+          <p>
+            5&ndash;8 polished screens, one complete user journey, an installable
+            test APK, source code, build verification, handoff notes, and one
+            revision round.
+          </p>
+          <small>
+            Payments, complex admin systems, advanced backends, and Play Store
+            release work are scoped separately.
+          </small>
+        </div>
+      </section>
+
+      <section class="app-process section-shell" id="process">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">How I work</span>
+            <h2>Small steps. Visible progress. Clean decisions.</h2>
+          </div>
+          <p>
+            I keep the first version narrow enough to finish and useful enough
+            to test with real people.
+          </p>
+        </div>
+
+        <div class="app-process-grid">
+          <article><span>01</span><h3>Clarify</h3><p>Define the user, main problem, must-have flow, and what is outside the first version.</p></article>
+          <article><span>02</span><h3>Prototype</h3><p>Build the key screens and decisions into a working Android journey.</p></article>
+          <article><span>03</span><h3>Verify</h3><p>Check behavior, edge cases, builds, accessibility, and the agreed cloud or local flows.</p></article>
+          <article><span>04</span><h3>Hand off</h3><p>Deliver the test build, source, clear notes, and a practical next-step list.</p></article>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contact">
+        <div class="contact-kicker">Have an Android app idea?</div>
+        <h2>
+          Start with the
+          <br />
+          main user journey.
+        </h2>
+        <p>
+          Tell me who the app is for, what they need to accomplish, and which
+          feature matters most. I will help turn that into a focused first
+          version.
+        </p>
+        <div class="contact-actions">
+          <a
+            class="button button-dark"
+            href="https://wa.me/923254172193?text=Hi%20Ahsan%2C%20I%27d%20like%20to%20discuss%20an%20Android%20app%20idea."
+            target="_blank"
+            rel="noreferrer"
+          >
+            Message on WhatsApp <span aria-hidden="true">&nearr;</span>
+          </a>
+          <a class="email-link" href="mailto:ahsanrehmat193@gmail.com">
+            ahsanrehmat193@gmail.com
+          </a>
+        </div>
+      </section>
+
+      <footer class="site-footer section-shell">
+        <div>
+          <strong>Ahsan Rehmat</strong>
+          <span>Android Prototyping &amp; Digital Delivery</span>
+        </div>
+        <p>Available for focused freelance projects &middot; Remote worldwide</p>
+        <a href="./index.html">
+          Portfolio home <span aria-hidden="true">&rarr;</span>
+        </a>
+      </footer>
+    </main>
+  </body>
+</html>
