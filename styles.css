@@ -109,7 +109,7 @@ img {
   text-transform: uppercase;
 }
 
-.site-header nav {
+.site-header > nav {
   display: flex;
   gap: clamp(1.4rem, 3vw, 2.7rem);
   font-size: 0.88rem;
@@ -134,12 +134,105 @@ img {
 }
 
 .header-cta {
-  justify-self: end;
   display: flex;
   align-items: center;
   gap: 0.65rem;
   font-size: 0.86rem;
   font-weight: 700;
+}
+
+.header-actions {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.mobile-nav {
+  position: relative;
+  display: none;
+}
+
+.mobile-nav summary {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 750;
+  list-style: none;
+  user-select: none;
+}
+
+.mobile-nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.mobile-nav summary span:last-child {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.9rem;
+  transition: transform 160ms ease;
+}
+
+.mobile-nav[open] summary {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.mobile-nav[open] summary span:last-child {
+  transform: rotate(45deg);
+}
+
+.mobile-nav nav {
+  position: absolute;
+  top: calc(100% + 0.7rem);
+  right: 0;
+  z-index: 30;
+  display: grid;
+  width: min(320px, calc(100vw - 2.5rem));
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--cream);
+  box-shadow: 0 22px 55px rgba(23, 34, 31, 0.22);
+}
+
+.mobile-nav nav a {
+  display: flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 650;
+}
+
+.mobile-nav nav a::after {
+  color: var(--ink-soft);
+  content: "→";
+}
+
+.mobile-nav nav a:last-child {
+  border-bottom: 0;
+}
+
+.mobile-nav nav a:hover {
+  background: var(--paper-deep);
+  opacity: 1;
+}
+
+.mobile-nav summary:focus-visible {
+  outline: 3px solid #6c8f00;
+  outline-offset: 3px;
 }
 
 .hero {
@@ -1222,8 +1315,12 @@ img {
     grid-template-columns: 1fr auto;
   }
 
-  .site-header nav {
+  .site-header > nav {
     display: none;
+  }
+
+  .mobile-nav {
+    display: block;
   }
 
   .hero-grid,
@@ -1449,6 +1546,12 @@ img {
 
   .policy-card-wide {
     grid-column: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-actions .header-cta {
+    display: none;
   }
 }
 
